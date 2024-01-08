@@ -58,7 +58,7 @@ ROOT_URLCONF = 'sports_management.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates\sportshome','templates\staff_module','templates\achievements'],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

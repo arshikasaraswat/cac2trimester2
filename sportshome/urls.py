@@ -1,7 +1,7 @@
 from django.urls import path, include
-from . import views
+from .views import *
 urlpatterns = [
-    path('', views.index),
-    path('staff' ,views.staff),
-    path('achievement', views.achievement)
+    path('', login_app, name='login'),
+    path('staff', staff),
+    path('achievement', achievement)
 ]
