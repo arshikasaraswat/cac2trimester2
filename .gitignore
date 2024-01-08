@@ -1,0 +1,9 @@
+db.sqlite3
+
+sports_management/__pycache__/
+sportshome/__pycache__/
+sportshome/migrations/__pycache__/
+staff_login/__pycache__/
+staff_login/migrations/__pycache__/
+student_login/__pycache__/
+student_login/migrations/__pycache__/
