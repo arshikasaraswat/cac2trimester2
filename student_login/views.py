@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate , login , logout
 def index(request):
     return render(request , 'student_module/student.html')
 
-def login(request):
+def user_login(request):
     if request.method == "POST":
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -13,12 +13,13 @@ def login(request):
         if user is not None and user.is_active:
             if user.is_superuser == False and user.is_staff == False:
                 login(request , user)
-                return render('index')
+                return render(request , 'student_module/student.html')
             else:
                 msg = "You are not authorized for this login!"
                 return render(request , 'login/login.html' , {'msg':msg})
         else:
             msg = "Wrong credentials!"
             return render(request , 'login/login.html' , {'msg':msg})
+    return render(request , 'login/login.html')
 
 
