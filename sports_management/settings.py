@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'staff_login',
+    'staff_login', 'achievements',
 ]
 
 MIDDLEWARE = [
